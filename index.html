@@ -1,0 +1,17 @@
+---
+layout: main
+---
+
+{% for post in paginator.posts %}
+  <div class="chapter">
+    <a href="{{post.url | prepend: site.baseurl}}">
+      {% if post.thumb %}
+      <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.thumb }} alt="{{post.title}}">
+      {% endif %}
+      <div class="chapter_inner">
+        <p class="chapter_number"><span>{{post.date | date: '%Y, %b %d'}}</span></p>
+        <h3 class="chapter_title">{{post.title}}</h3>
+      </div>
+    </a>
+  </div>
+{% endfor %}

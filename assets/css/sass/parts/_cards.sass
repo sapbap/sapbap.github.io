@@ -1,0 +1,74 @@
+// - - - - - - - - - - Cards Styles - - - - - - - - - - //
+
+.chapters
+  padding: 2rem 0
+  .chapter
+    position: relative
+    float: left
+    width: 32.333%
+    margin: 0 0.5% 1% 0.5%
+    overflow: hidden
+    transition: transform 0.4s
+    a
+      text-decoration: none
+    img
+      width: 100%
+      vertical-align: middle
+      transition: all 0.4s
+      //&:hover
+      //  transform: scale(1.5)
+
+  .chapter_inner
+    position: absolute
+    left: 2.5%
+    bottom: 10%
+    .chapter_number, .chapter_title
+      color: $white
+    .chapter_number
+      font-size: 0.9rem
+      text-transform: uppercase
+      margin: 0 0 1rem 0
+      &::after
+        content: ""
+        display: block
+        width: 40px
+        margin-top: 0.3rem
+        border-top: 3px solid $border_red
+      span
+        background-color: rgba($black, 0.25)
+
+    .chapter_title
+      font-size: 1.75rem
+      font-weight: 400
+      margin: 0 0 0.5rem 0
+      //background-color: rgba($black, 0.4)
+      background-color: rgba($highlight, .4)
+
+.chapter_inner2
+    position: absolute
+    //left: 2.5%
+    bottom: 0%
+    .chapter_number, .chapter_title
+      color: $white
+    .chapter_number
+      font-size: 0.9rem
+      text-transform: uppercase
+      margin: 0 0 1rem 0
+      &::after
+        content: ""
+        display: block
+        width: 40px
+        margin-top: 0.3rem
+        border-top: 3px solid $border_red
+      span
+        background-color: rgba($black, 0.4)
+
+    .chapter_title
+      font-size: 1.75rem
+      //font-weight: 400
+      font-weight: bold
+      //margin: 0 0 0.5rem 0
+      //background-color: rgba($black, 0.4)
+      background-color: rgba($highlight, .4)
+      padding: 1rem
+      margin: 0
